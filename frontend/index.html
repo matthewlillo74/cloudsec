@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cloud Security Scanner</h1>
+        <button id="scan-btn">Run Scan</button>
+        <div id="result"></div>
+    </div>
+    <script src="main.js"></script>
+    <button id="scan-btn">Scan</button>
+
+<h3>Remediate</h3>
+
+<!-- S3 remediation -->
+<input type="text" id="s3-bucket" placeholder="Bucket name" />
+<button id="remediate-s3-btn">Remediate S3</button>
+
+<!-- Security Group remediation -->
+<input type="text" id="sg-id" placeholder="Security Group ID" />
+<button id="remediate-sg-btn">Remediate SG</button>
+
+<!-- RDS remediation -->
+<input type="text" id="rds-id" placeholder="RDS DB Identifier" />
+<button id="remediate-rds-btn">Remediate RDS</button>
+
+<div id="results"></div>
+
+</body>
+</html>
